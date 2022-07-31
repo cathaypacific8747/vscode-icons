@@ -87,6 +87,12 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'allcontributors',
+      extensions: ['.all-contributorsrc'],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'affinitydesigner',
       extensions: ['afdesign', 'affinitydesigner'],
       format: FileFormat.svg,
@@ -772,6 +778,11 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'bun',
+      extensions: ['bun', 'lockb'],
+      format: FileFormat.svg,
+    },
+    {
       icon: 'bundler',
       extensions: ['gemfile', 'gemfile.lock'],
       format: FileFormat.svg,
@@ -779,6 +790,12 @@ export const extensions: IFileCollection = {
     {
       icon: 'bundler',
       extensions: ['gemfile', 'gemfile.lock'],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'bunfig',
+      extensions: ['bunfig.toml'],
       filename: true,
       format: FileFormat.svg,
     },
@@ -1193,8 +1210,30 @@ export const extensions: IFileCollection = {
     },
     {
       icon: 'cypress',
-      extensions: [`cypress.json`, `cypress.env.json`],
+      extensions: [
+        'cypress.json',
+        'cypress.env.json',
+        'cypress.config.js',
+        'cypress.config.ts',
+        'cypress.config.cjs',
+        'cypress.config.mjs',
+      ],
       filename: true,
+      light: true,
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'cypress_spec',
+      extensions: [
+        'cy.js',
+        'cy.mjs',
+        'cy.cjs',
+        'cy.coffee',
+        'cy.ts',
+        'cy.tsx',
+        'cy.jsx',
+      ],
+      light: true,
       format: FileFormat.svg,
     },
     {
@@ -1541,6 +1580,19 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'fantasticon',
+      extensions: [
+        '.fantasticonrc',
+        'fantasticonrc',
+        '.fantasticonrc.json',
+        'fantasticonrc.json',
+        '.fantasticonrc.js',
+        'fantasticonrc.js',
+      ],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'fauna',
       extensions: ['.faunarc'],
       languages: [languages.fauna],
@@ -1573,13 +1625,21 @@ export const extensions: IFileCollection = {
       filename: true,
       format: FileFormat.svg,
     },
-    { icon: 'flash', extensions: ['swf', 'swc'], format: FileFormat.svg },
     {
       icon: 'fla',
       extensions: ['fla'],
       light: true,
       format: FileFormat.svg,
     },
+    {
+      icon: 'flareact',
+      extensions: [],
+      filenamesGlob: ['flareact.config'],
+      extensionsGlob: ['js'],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    { icon: 'flash', extensions: ['swf', 'swc'], format: FileFormat.svg },
     {
       icon: 'floobits',
       extensions: ['.flooignore'],
@@ -1738,6 +1798,12 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'gcloud',
+      extensions: ['.gcloudignore'],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'genstat',
       extensions: [],
       languages: [languages.genstat],
@@ -1796,6 +1862,12 @@ export const extensions: IFileCollection = {
     {
       icon: 'go_package',
       extensions: ['go.sum', 'go.mod'],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'go_work',
+      extensions: ['go.work'],
       filename: true,
       format: FileFormat.svg,
     },
@@ -1910,6 +1982,14 @@ export const extensions: IFileCollection = {
       icon: 'harbour',
       extensions: [],
       languages: [languages.harbour],
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'hardhat',
+      extensions: [],
+      filenamesGlob: ['hardhat.config'],
+      extensionsGlob: ['js', 'ts'],
+      filename: true,
       format: FileFormat.svg,
     },
     {
@@ -2967,6 +3047,13 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'objidconfig',
+      extensions: ['.objidconfig'],
+      light: true,
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'ocaml',
       extensions: ['.merlin'],
       filename: true,
@@ -3189,6 +3276,14 @@ export const extensions: IFileCollection = {
     {
       icon: 'plantuml',
       extensions: ['pu', 'plantuml', 'iuml', 'puml'],
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'playwright',
+      extensions: [],
+      filenamesGlob: ['playwright.config'],
+      extensionsGlob: ['js', 'ts'],
+      filename: true,
       format: FileFormat.svg,
     },
     {
@@ -3604,6 +3699,13 @@ export const extensions: IFileCollection = {
       filenamesGlob: ['renovate', '.renovaterc'],
       extensionsGlob: ['json'],
       filename: true,
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'replit',
+      extensions: ['.replit', 'replit.nix'],
+      filename: true,
+      light: true,
       format: FileFormat.svg,
     },
     {
@@ -4071,6 +4173,12 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'tauri',
+      extensions: ['tauri.conf.json'],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'teal',
       extensions: [],
       languages: [languages.teal],
@@ -4091,7 +4199,7 @@ export const extensions: IFileCollection = {
     },
     {
       icon: 'terraform',
-      extensions: ['tfstate'],
+      extensions: ['tfstate', 'tfvars', 'tf', 'tf.json'],
       languages: [languages.terraform],
       format: FileFormat.svg,
     },
@@ -4555,7 +4663,7 @@ export const extensions: IFileCollection = {
         'webpack.rules',
         'webpack.test.conf',
       ],
-      extensionsGlob: ['js', 'coffee', 'ts'],
+      extensionsGlob: ['js', 'cjs', 'mjs', 'coffee', 'ts'],
       filename: true,
       format: FileFormat.svg,
     },
